@@ -1,0 +1,28 @@
+        [{
+           "name":"Yoshi",
+           "belt":"Green",
+           "rate": 123,
+           "avalibale":true,
+            "thumb":"app/img/face1.jpg"
+       },
+       {
+           "name":"Crystal",
+           "belt":"Yellow",
+           "rate": 200,
+           "avalibale":true,
+           "thumb":"app/img/face2.jpg"
+       },
+       {
+           "name":"Ryu",
+           "belt":"Orange",
+           "rate":234,
+           "avalibale":false,
+           "thumb":"app/img/face3.jpg"
+       },
+       {
+           "name":"Shaun",
+           "belt":"Black",
+           "rate":555,
+           "avalibale":true,
+           "thumb":"app/img/face4.jpg"
+       }]
