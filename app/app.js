@@ -47,7 +47,19 @@ return{
     }
 }    
 }]);
-
+//Catch Routing Errors
+app.directive('error',function($rootScope){
+    return{
+        restrict: 'E',
+        template: '<div style:"color:red" ng-show="isError">$routeChangeError</div>',
+        link: function(scope){
+            $rootScope.$on("$routeChangeError",function(){
+                scope.isError = true;
+            })
+        }
+    }
+});
+//Main Controller
 app.controller('NinjaController',['$scope','$http',function($scope,$http){
     
     $scope.removeNinja = function(ninja){
