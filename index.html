@@ -6,16 +6,24 @@
     <base href="/">
     <title>TheNetNinja Angular Playlist</title>
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
-    <script src="app/lib/angular/angular.min.js"></script>
-    <script src="app/lib/angular-route/angular-route.min.js"></script>
-    <script src="app/lib/angular-animate/angular-animate.min.js"></script>
-    <script src="app/app.js"></script>
 </head>
 
 <body>
-    <header ng-include="'views/header.html'"></header>
+    <header ng-include="'app/views/header.html'"></header>
     <error></error>
     <main ng-view></main>
+
+
+    <script src="app/lib/angular/angular.min.js"></script>
+    <script src="app/lib/angular-route/angular-route.min.js"></script>
+    <script src="app/lib/angular-animate/angular-animate.min.js"></script>
+    <!--    <script src="app/app.js"></script>-->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routing.js"></script>
+    <script src="app/controllers/ninja.controller.js"></script>
+    <script src="app/controllers/contact.controller.js"></script>
+    <script src="app/directives/randomNinja.directive.js"></script>
+    <script src="app/directives/error.directive.js"></script>
 </body>
 
 </html>
